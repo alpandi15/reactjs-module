@@ -1,0 +1,38 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    [
+      "babel-plugin-styled-components"
+    ],
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./src"
+        ],
+        "alias": {
+          "constants": "./src/constants",
+          "components": "./src/components",
+          "theme": "./src/theme",
+          "utils": "./src/utils",
+          "services": "./src/services",
+          "static": "./static",
+          "actions": "./src/actions",
+          "store": "./src/store",
+          "container": "./src/container"
+        }
+      }
+    ]
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        [
+          "babel-plugin-styled-components"
+        ]
+      ]
+    }
+  }
+}
